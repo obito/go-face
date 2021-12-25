@@ -1,7 +1,7 @@
 package face
 
-// #cgo CXXFLAGS: -std=c++1z -Wall -O3 -DNDEBUG -mcpu=apple-m1
-// #cgo LDFLAGS: -ldlib -lblas -lcblas -llapack -ljpeg
+// #cgo CXXFLAGS: -std=c++1z -Wall -O3 -DNDEBUG -mcpu=apple-m1 -I/opt/homebrew/Cellar/jpeg/9d/include -I/opt/homebrew/Cellar/dlib/19.22/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include
+// #cgo LDFLAGS: -L/opt/homebrew/Cellar/jpeg/9d/lib -L/opt/homebrew/Cellar/dlib/19.22/lib -ldlib /opt/homebrew/lib/libpng.dylib /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libz.tbd /opt/homebrew/lib/libjpeg.dylib /opt/homebrew/opt/openblas/lib/libopenblas.dylib /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libsqlite3.tbd -lblas -lcblas -llapack -ljpeg
 // #include <stdlib.h>
 // #include <stdint.h>
 // #include "facerec.h"
